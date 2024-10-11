@@ -2,12 +2,13 @@
   "manifest_version": 2,
   "name": "Focus First Non-Pinned Tab",
   "version": "1.0",
-  "description": "Maps Alt+0 to focus the first non-pinned tab",
+  "description": "Maps a configurable shortcut to focus the first non-pinned tab",
   "background": {
     "scripts": ["background.js"]
   },
   "permissions": [
-    "tabs"
+    "tabs",
+    "storage"
   ],
   "commands": {
     "focus-first-non-pinned-tab": {
@@ -16,5 +17,9 @@
       },
       "description": "Focus the first non-pinned tab"
     }
+  },
+  "options_ui": {
+    "page": "options.html",
+    "browser_style": true
   }
 }
