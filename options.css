@@ -1,0 +1,11 @@
+.status {
+  margin-top: 1em;
+  padding: 0.5em;
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+}
+
+.panel-section-footer {
+  justify-content: flex-end;
+}
