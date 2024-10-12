@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Focus First Non-Pinned Tab Options</title>
+  <link rel="stylesheet" type="text/css" href="chrome://browser/content/extension.css">
+  <link rel="stylesheet" type="text/css" href="chrome://global/skin/in-content/common.css">
 </head>
 <body>
   <form>
-    <label for="shortcut">Keyboard shortcut:</label>
-    <input type="text" id="shortcut" name="shortcut">
-    <button type="submit">Save</button>
+    <div class="panel-section panel-section-formElements">
+      <div class="panel-formElements-item">
+        <label for="shortcut">Keyboard shortcut:</label>
+        <input type="text" id="shortcut" name="shortcut">
+      </div>
+    </div>
+    <div class="panel-section panel-section-footer">
+      <button type="submit" class="primary">Save</button>
+    </div>
   </form>
   <script src="options.js"></script>
 </body>
